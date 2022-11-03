@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".TaskFragment">
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    app:endIconMode="clear_text"
+    app:counterEnabled="true"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:id="@+id/edittext"
+        android:maxLength="60"
+        android:inputType="textCapSentences"
+        android:hint="введите новость"
+        android:layout_height="wrap_content"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:inputType="textCapSentences"
+        android:hint="введите новость"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnsave"
+
+        android:text="Save"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
